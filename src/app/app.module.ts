@@ -8,6 +8,8 @@ import { RodapeComponent } from './componentes/rodape/rodape.component';
 import { ListarPensamentoComponent } from './componentes/pensamentos/listar-pensamento/listar-pensamento.component';
 import { CriarPensamentoComponent } from './componentes/pensamentos/criar-pensamento/criar-pensamento.component';
 import { PensamentoComponent } from './componentes/pensamentos/pensamento/pensamento.component';
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { PensamentoComponent } from './componentes/pensamentos/pensamento/pensam
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
